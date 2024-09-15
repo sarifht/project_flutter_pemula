@@ -5,11 +5,10 @@ class ListContactPage extends StatefulWidget {
   const ListContactPage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _ListContactPageState createState() => _ListContactPageState();
+  ListContactPageState createState() => ListContactPageState();
 }
 
-class _ListContactPageState extends State<ListContactPage> {
+class ListContactPageState extends State<ListContactPage> {
   List<Map<String, String>> contacts = [
     {"name": "Alice", "phone": "081234567890", "image": "images/profile.png"},
     {"name": "Bob", "phone": "081234567891", "image": "images/profile.png"},
@@ -84,8 +83,7 @@ class _ListContactPageState extends State<ListContactPage> {
                   title: Text(contact['name']!),
                   subtitle: Text(contact['phone']!),
                   trailing: IconButton(
-                    // ignore: prefer_const_constructors
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.favorite_border,
                       color: Colors.red,
                     ),

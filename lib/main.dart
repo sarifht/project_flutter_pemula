@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'list_contact.dart'; // Import halaman list contact
 import 'profile.dart'; // Import halaman profile
+import 'favorite.dart'; // Import halaman favorite
 
 void main() {
   runApp(const MyApp());
@@ -31,11 +33,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0; // Index menu navigasi yang dipilih
 
-  // Daftar halaman untuk navigasi, termasuk halaman ProfilePage
+  // Daftar halaman untuk navigasi, termasuk halaman ProfilePage dan FavoritePage
   final List<Widget> _pages = [
-    const Center(child: Text('Ini adalah Beranda')),
-    const Center(child: Text('Ini adalah Favorite')),
-    const ProfilePage(), // Tambahkan ProfilePage
+    const ListContactPage(), // Tampilan list kontak
+    const FavoritePage(), // Halaman Favorite
+    const ProfilePage(), // Halaman Profile
   ];
 
   // Fungsi untuk mengubah halaman berdasarkan item yang dipilih

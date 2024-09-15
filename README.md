@@ -5,6 +5,7 @@ Ini adalah proyek akhir dari kelas **Belajar Membuat Aplikasi Flutter untuk Pemu
 Nama aplikasi **Aplikasi Daftar Kontak** yang dikerjakan oleh Sarif Hidayatullah. Proyek ini bersifat open source, jadi silahkan saja jika kamu ingin mengembangkannya kembali tapi saya harap kamu tidak langsung submit tugas ini karena khawatir terkena sanksi plagiarisme.
 
 Kamu bisa menemukan source kode dari project ini pada tautan berikut:
+https://github.com/sarifht/project_flutter_pemula
 
 Jika kamu ingin berdiskusi atau bertanya-tanya mengenai project ini, feel free untuk hubungi saya ✌️ tapi saya tidak janji akan membalasnya cepat 😊
 

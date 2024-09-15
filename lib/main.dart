@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'profile.dart'; // Import halaman profile
 
 void main() {
-  runApp(const MyApp()); // Memulai aplikasi Flutter
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,14 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // MaterialApp sebagai root aplikasi, menonaktifkan banner debug dan mengatur tema
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Menyembunyikan banner debug
-      title: 'Buku Kontak', // Judul aplikasi
+      debugShowCheckedModeBanner: false,
+      title: 'Buku Kontak',
       theme: ThemeData(
-        primarySwatch: Colors.blue, // Mengatur tema dasar dengan warna biru
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(), // Menentukan halaman utama aplikasi
+      home: const MyHomePage(),
     );
   }
 }
@@ -31,14 +31,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0; // Index menu navigasi yang dipilih
 
-  // Daftar halaman untuk setiap menu navigasi
+  // Daftar halaman untuk navigasi, termasuk halaman ProfilePage
   final List<Widget> _pages = [
     const Center(child: Text('Ini adalah Beranda')),
     const Center(child: Text('Ini adalah Favorite')),
-    const Center(child: Text('Ini adalah Profile')),
+    const ProfilePage(), // Tambahkan ProfilePage
   ];
 
-  // Fungsi untuk mengubah halaman berdasarkan item yang dipilih di BottomNavigationBar
+  // Fungsi untuk mengubah halaman berdasarkan item yang dipilih
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index; // Ubah index sesuai item yang dipilih

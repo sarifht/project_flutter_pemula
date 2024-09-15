@@ -5,6 +5,7 @@ class ListContactPage extends StatefulWidget {
   const ListContactPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ListContactPageState createState() => _ListContactPageState();
 }
 
@@ -83,6 +84,7 @@ class _ListContactPageState extends State<ListContactPage> {
                   title: Text(contact['name']!),
                   subtitle: Text(contact['phone']!),
                   trailing: IconButton(
+                    // ignore: prefer_const_constructors
                     icon: Icon(
                       Icons.favorite_border,
                       color: Colors.red,

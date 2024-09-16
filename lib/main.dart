@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'list_contact.dart'; // Import halaman list contact
-import 'profile.dart'; // Import halaman profile
-import 'favorite.dart'; // Import halaman favorite
+import 'list_contact.dart';
+import 'profile.dart';
+import 'favorite.dart';
 
 void main() {
   runApp(const MyApp());
@@ -62,16 +62,16 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Beranda', // Menu Beranda
+            icon: Icon(Icons.contacts_rounded),
+            label: 'Kontak', // Menu Beranda
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'Favorite', // Menu Favorite
+            label: 'Favorit', // Menu Favorite
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile', // Menu Profile
+            label: 'Profil', // Menu Profile
           ),
         ],
         currentIndex: _selectedIndex, // Index yang dipilih saat ini

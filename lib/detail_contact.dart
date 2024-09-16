@@ -14,38 +14,37 @@ class DetailContactPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight =
+        MediaQuery.of(context).size.height; // Mendapatkan tinggi layar
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(name),
+        centerTitle: true, // Nama di AppBar berada di tengah
+        title: Text('Detail Kontak'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center, // Horizontal di tengah
           children: [
+            SizedBox(
+                height: screenHeight *
+                    0.10), // Padding antara AppBar dan body sebesar 10% dari tinggi layar
             CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage(image),
             ),
             const SizedBox(height: 20),
             Text(
-              'Nama: $name',
-              style: const TextStyle(fontSize: 24),
+              name,
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             const SizedBox(height: 10),
             Text(
-              'Nomor Telepon: $phone',
+              phone,
               style: const TextStyle(fontSize: 20),
-            ),
-            const SizedBox(height: 30),
-            IconButton(
-              icon: Icon(
-                Icons.favorite_border,
-                color: Colors.red,
-              ),
-              onPressed: () {
-                // Logika untuk menambahkan ke favorite
-              },
             ),
           ],
         ),

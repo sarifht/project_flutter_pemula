@@ -2,9 +2,18 @@ import 'package:flutter/material.dart';
 import 'list_contact.dart';
 import 'profile.dart';
 import 'favorite.dart';
+import 'package:provider/provider.dart';
+import 'contact_provider.dart'; // Import file provider
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ContactProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -33,17 +42,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0; // Index menu navigasi yang dipilih
 
-  // Daftar halaman untuk navigasi, termasuk halaman ProfilePage dan FavoritePage
+  // Daftar halaman untuk navigasi
   final List<Widget> _pages = [
-    const ListContactPage(), // Tampilan list kontak
-    const FavoritePage(), // Halaman Favorite
-    const ProfilePage(), // Halaman Profile
+    const ListContactPage(),
+    const FavoritePage(),
+    const ProfilePage(),
   ];
 
-  // Fungsi untuk mengubah halaman berdasarkan item yang dipilih
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index; // Ubah index sesuai item yang dipilih
+      _selectedIndex = index;
     });
   }
 
@@ -57,26 +65,25 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(color: Colors.white), // Teks header berwarna putih
         ),
       ),
-      body: _pages[
-          _selectedIndex], // Menampilkan halaman berdasarkan index yang dipilih
+      body: _pages[_selectedIndex], // Menampilkan halaman berdasarkan index
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.contacts_rounded),
-            label: 'Kontak', // Menu Beranda
+            label: 'Kontak',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'Favorit', // Menu Favorite
+            label: 'Favorit',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profil', // Menu Profile
+            label: 'Profil',
           ),
         ],
-        currentIndex: _selectedIndex, // Index yang dipilih saat ini
-        selectedItemColor: Colors.black, // Warna item yang dipilih
-        onTap: _onItemTapped, // Panggil fungsi saat item dipilih
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.black,
+        onTap: _onItemTapped,
       ),
     );
   }

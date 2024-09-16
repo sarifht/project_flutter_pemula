@@ -54,6 +54,21 @@ dev_dependencies:
 flutter:
   assets:
     - images/profile.png
+    - images/avatars/aulus.png
+    - images/avatars/bruno.png
+    - images/avatars/claude.png
+    - images/avatars/diggie.png
+    - images/avatars/eudora.png
+    - images/avatars/fredrinn.png
+    - images/avatars/gusion.png
+    - images/avatars/hilda.png
+    - images/avatars/ixia.png
+    - images/avatars/joy.png
+    - images/avatars/karina.png
+    - images/avatars/ling.png
+    - images/avatars/miya.png
+    - images/avatars/nana.png
+    - images/avatars/odette.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

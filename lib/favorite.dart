@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'contact_provider.dart';
 
 class FavoritePage extends StatelessWidget {
   const FavoritePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Daftar kontak favorit yang nanti akan diisi
-    final List<Map<String, String>> favoriteContacts = [];
+    final contactProvider = Provider.of<ContactProvider>(context);
+    final favoriteContacts = contactProvider.favoriteContacts;
 
     return favoriteContacts.isEmpty
         ? const Center(child: Text('Tidak ada kontak favorit'))
@@ -22,9 +24,12 @@ class FavoritePage extends StatelessWidget {
                   title: Text(contact['name']!),
                   subtitle: Text(contact['phone']!),
                   trailing: IconButton(
-                    icon: const Icon(Icons.favorite),
+                    icon: const Icon(Icons.favorite, color: Colors.red),
                     onPressed: () {
-                      // Logika untuk menghapus dari favorite
+                      // Toggle favorite dari halaman Favorite
+                      int originalIndex =
+                          contactProvider.contacts.indexOf(contact);
+                      contactProvider.toggleFavorite(originalIndex);
                     },
                   ),
                   onTap: () {

@@ -95,6 +95,9 @@ class ContactProvider with ChangeNotifier {
     // Tambahkan kontak lainnya
   ];
 
+  List<Map<String, dynamic>> get favoriteContacts =>
+      contacts.where((contact) => contact['isFavorite'] == true).toList();
+
   void toggleFavorite(int index) {
     contacts[index]['isFavorite'] = !contacts[index]['isFavorite'];
     notifyListeners(); // Notifikasi perubahan ke UI

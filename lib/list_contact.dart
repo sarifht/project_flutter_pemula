@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'detail_contact.dart';
-import 'contact_provider.dart'; // Import provider
+import 'contact_provider.dart';
 
 class ListContactPage extends StatefulWidget {
   const ListContactPage({super.key});

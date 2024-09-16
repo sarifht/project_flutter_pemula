@@ -20,7 +20,7 @@ class DetailContactPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true, // Nama di AppBar berada di tengah
-        title: Text('Detail Kontak'),
+        title: const Text('Detail Kontak'),
       ),
       body: Center(
         child: Column(

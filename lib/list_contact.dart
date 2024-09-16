@@ -11,91 +11,91 @@ class ListContactPage extends StatefulWidget {
 class ListContactPageState extends State<ListContactPage> {
   List<Map<String, dynamic>> contacts = [
     {
-      "name": "Alice",
+      "name": "Aulus",
       "phone": "081234567890",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Bob",
+      "name": "Bruno",
       "phone": "081234567891",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Charlie",
+      "name": "Claude",
       "phone": "081234567892",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "David",
+      "name": "Diggie",
       "phone": "081234567893",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Eva",
+      "name": "Eudora",
       "phone": "081234567894",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Frank",
+      "name": "Fredrinn",
       "phone": "081234567895",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Grace",
+      "name": "Gusion",
       "phone": "081234567896",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Hank",
+      "name": "Hilda",
       "phone": "081234567897",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Ivy",
+      "name": "Ixia",
       "phone": "081234567898",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Jack",
+      "name": "Joy",
       "phone": "081234567899",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Kate",
+      "name": "Karina",
       "phone": "081234567800",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Leo",
+      "name": "Ling",
       "phone": "081234567801",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Mia",
+      "name": "Miya",
       "phone": "081234567802",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Nina",
+      "name": "Nana",
       "phone": "081234567803",
       "image": "images/profile.png",
       "isFavorite": false
     },
     {
-      "name": "Oscar",
+      "name": "Odette",
       "phone": "081234567804",
       "image": "images/profile.png",
       "isFavorite": false

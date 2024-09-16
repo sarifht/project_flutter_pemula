@@ -49,4 +49,17 @@ Kamu bisa menjalankannya di laptop yang kamu miliki dengan cara sebagai berikut:
 
 ...
 
+## Gambaran Aplikasi
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="Screenshot 2024-09-17 062410.png" alt="alt text" style="width: 150px;"/>
+  <img src="Screenshot 2024-09-17 054721.png" alt="alt text" style="width: 150px;"/>
+  <img src="Screenshot 2024-09-17 054821.png" alt="alt text" style="width: 150px;"/>
+  <img src="Screenshot 2024-09-17 062320.png" alt="alt text" style="width: 150px;"/>
+  <img src="Screenshot 2024-09-17 062341.png" alt="alt text" style="width: 150px;"/>
+  <img src="Screenshot 2024-09-17 062354.png" alt="alt text" style="width: 150px;"/>
+</div>
+
+...
+
 Ditulis oleh: Sarif Hidayatullah

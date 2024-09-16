@@ -3,7 +3,7 @@ import 'list_contact.dart';
 import 'profile.dart';
 import 'favorite.dart';
 import 'package:provider/provider.dart';
-import 'contact_provider.dart'; // Import file provider
+import 'contact_provider.dart'; // Import data contact
 
 void main() {
   runApp(

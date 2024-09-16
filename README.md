@@ -62,6 +62,9 @@ Gambaran jika running pada device Android.
    <img src="Screenshot 2024-09-17 062410.png" alt="alt text" style="height: 250px; margin: 10px;">
 </div>
 
+Untuk versi websitenya kamu bisa lihat ditautan berikut:
+https://project-flutter-pemula-mtsv1i7no-sarifht-project1.vercel.app/
+
 ...
 
 Ditulis oleh: Sarif Hidayatullah

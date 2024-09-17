@@ -66,7 +66,7 @@ Gambaran jika running pada device Android.
 
 Untuk versi websitenya kamu bisa lihat ditautan berikut:
 
-https://project-flutter-pemula-mtsv1i7no-sarifht-project1.vercel.app/
+https://project-flutter-pemula-web.vercel.app/
 
 ...
 
